@@ -135,25 +135,6 @@ nav.scrolled {
   padding: 0 20px;
 }
 
-.hero-content h1 {
-  font-size: 80px;
-  font-weight: 900;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  background: linear-gradient(135deg, #ffffff 0%, #eb6301 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fadeInUp 1s ease-out;
-}
-
-.hero-content p {
-  font-size: 24px;
-  color: #aaaaaa;
-  margin-bottom: 40px;
-  animation: fadeInUp 1s ease-out 0.2s both;
-}
-
 .cta-button {
   display: inline-block;
   padding: 18px 45px;
@@ -269,11 +250,6 @@ section {
   margin-bottom: 10px;
 }
 
-.portfolio-info p {
-  font-size: 14px;
-  color: #e0e0e0;
-}
-
 /* Services */
 .services-grid {
   display: grid;
@@ -373,13 +349,7 @@ footer {
     gap: 20px;
   }
 
-  .hero-content h1 {
-    font-size: 48px;
-  }
-
-  .hero-content p {
-    font-size: 18px;
-  }
+  /* Removed unused .hero-content h1 / p rules (no h1/p inside .hero-content) */
 
   section {
     padding: 60px 20px;
