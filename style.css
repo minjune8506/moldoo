@@ -1,14 +1,21 @@
+/* Global */
+:root {
+  --background: #1c1d1d;
+  --text-white: #ffffff;
+  --primary: #eb6301;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* width = content + padding + border */
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  background: #1c1d1d;
-  color: #ffffff;
+  background: var(--background);
+  color: var(--text-white);
   overflow-x: hidden;
 }
 
@@ -22,34 +29,32 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  background: rgba(28, 29, 29, 0.8);
   backdrop-filter: blur(10px);
   transition: all 0.3s;
 }
 
 nav.scrolled {
   padding: 15px 50px;
-  background: rgba(28, 29, 29, 0.95);
 }
 
 .logo {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 2px;
-  background: linear-gradient(135deg, #eb6301 0%, #ff8534 100%);
-  -webkit-background-clip: text;
+  background: linear-gradient(135deg, var(--primary) 0%, #ff8534 100%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; /* Safari / Chrome */
+  -webkit-text-fill-color: transparent; /* Safari / Chrome */
 }
 
 .nav-links {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   list-style: none;
 }
 
 .nav-links a {
-  color: #ffffff;
+  color: var(--text-white);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -64,7 +69,7 @@ nav.scrolled {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #eb6301 0%, #eb6301 100%);
+  background: var(--primary);
   transition: width 0.3s;
 }
 
@@ -101,7 +106,7 @@ nav.scrolled {
 }
 
 .hero-strong {
-  color: #eb6301;
+  color: var(--primary);
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
@@ -138,7 +143,7 @@ nav.scrolled {
 .cta-button {
   display: inline-block;
   padding: 18px 45px;
-  background: linear-gradient(135deg, #eb6301 0%, #ff8534 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #ff8534 100%);
   color: #ffffff;
   text-decoration: none;
   border-radius: 50px;
@@ -176,7 +181,7 @@ section {
   font-weight: 800;
   margin-bottom: 60px;
   text-align: center;
-  background: linear-gradient(135deg, #ffffff 0%, #eb6301 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--primary) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -227,7 +232,7 @@ section {
 }
 
 .portfolio-item:hover {
-  box-shadow: 0 0 0 2px #eb6301, 0 0 20px rgba(235, 99, 1, 0.3);
+  box-shadow: 0 0 0 2px var(--primary), 0 0 20px rgba(235, 99, 1, 0.3);
 }
 
 .portfolio-item:hover .portfolio-video iframe {
@@ -322,7 +327,7 @@ section {
 }
 
 .contact-item a {
-  color: #eb6301;
+  color: var(--primary);
   text-decoration: none;
   transition: color 0.3s;
 }
