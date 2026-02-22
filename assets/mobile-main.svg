@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 631.37 1434.63">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        filter: url(#outer-glow-1);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="0" width="631.37" height="1434.63"/>
+    </clipPath>
+    <filter id="outer-glow-1" x="-427.89" y="483.86" width="1493" height="1355" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="37.93"/>
+      <feFlood flood-color="#ea5619" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_레이어_1-2" data-name="레이어 1">
+    <rect class="cls-1" y="183.58" width="631.37" height="1251.05"/>
+    <g class="cls-4">
+      <ellipse class="cls-2" cx="318.29" cy="1161.1" rx="632.24" ry="563.3"/>
+    </g>
+  </g>
+</svg>

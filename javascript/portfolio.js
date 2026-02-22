@@ -1,159 +1,159 @@
-// Portfolio rendering: creates iframe cards from a videos array
+// Portfolio with tabs: FILM and DESIGN
 document.addEventListener("DOMContentLoaded", () => {
   const videos = [
     {
-      src: "https://www.youtube.com/embed/eY952SAPmIQ?si=MqsppPxZo2kaHQrB",
-      title: "GYM2 청년취업GYM 오프닝 최종",
-      caption: "모션그래픽",
+      src: "https://www.youtube.com/embed/XrIR6-hb7X8?si=4lLE--VavXxxBpvH",
+      title: "다시, 푸들 | 반려동물구조협회",
+      caption: "다시, 푸들 | 반려동물구조협회",
     },
     {
-      src: "https://www.youtube.com/embed/rTw0UMbUfl4?si=iOFcJPO_JGLD3wZi",
-      title: "YouTube video player",
-      caption: "모션그래픽",
+      src: "https://www.youtube.com/embed/pC7Xsi3c9UQ?si=kjDjubc53VsaRZoU",
+      title: "Rise on One | AI 뮤직비디오",
+      caption: "Rise on One | AI 뮤직비디오",
     },
     {
-      src: "https://www.youtube.com/embed/RmYgcA9n-uw?si=LLY_p0A-fiXRmB60",
-      title: "YouTube video player",
-      caption: "행사 홍보 영상",
+      src: "https://www.youtube.com/embed/d5BJ5o_gF5Y?si=lYx-sCPMwRzXgKCh",
+      title: "교육용 영상 | K-edu(PLANTGROW)",
+      caption: "교육용 영상 | K-edu(PLANTGROW)",
     },
     {
-      src: "https://www.youtube.com/embed/3zbLNaAljiM?si=aEKs7QtgcIiSdZ_k",
-      title: "YouTube video player",
-      caption: "행사 홍보 영상",
+      src: "https://www.youtube.com/embed/lrlWkzcqF1s?si=24GaWSeff3PmmTOt",
+      title: "포트폴리오 영상 | MC진심",
+      caption: "포트폴리오 영상 | MC진심",
     },
     {
-      src: "https://www.youtube.com/embed/2itCT-kxTWs?si=f07R6Nxbg3CNmJhR",
-      title: "YouTube video player",
-      caption: "브랜드 홍보 영상",
+      src: "https://www.youtube.com/embed/PMW_5Ycpx1I?si=UBvNDkj_YIyJYNNG",
+      title: "덴마크 정자은행 | 메디칼티카",
+      caption: "덴마크 정자은행 | 메디칼티카",
     },
     {
-      src: "https://www.youtube.com/embed/exQZ6ou9h0U?si=OaJa5tUuqdXqntrq",
-      title: "YouTube video player",
-      caption: "브랜드 홍보 영상",
+      src: "https://www.youtube.com/embed/8ewkAcvMPJ8?si=QYW98Ikg0-G5u638",
+      title: "로맨스 코드 | 전북도민일보",
+      caption: "로맨스 코드 | 전북도민일보",
     },
     {
-      src: "https://www.youtube.com/embed/WlxgOPa7UEU?si=MBsKTKAUpqHAqxgf",
-      title: "YouTube video player",
-      caption: "행사 스케치 영상",
+      src: "https://www.youtube.com/embed/XrEeRc6gSkk?si=TA9EBpoHC2lAt2bc",
+      title: "브랜드 영상 | 비아로",
+      caption: "브랜드 영상 | 비아로",
     },
     {
-      src: "https://www.youtube.com/embed/Pi5Md7LlT0k?si=O-CogDIWUcFx-dNZ",
-      title: "YouTube video player",
-      caption: "행사 스케치 영상",
+      src: "https://www.youtube.com/embed/agN0QS8i1uk?si=PqZgCt16I--fNJtf",
+      title: "브이로그 영상 | 개인",
+      caption: "브이로그 영상 | 개인",
     },
     {
-      src: "https://www.youtube.com/embed/BuyKEkT-TC8?si=3-dAqdHVJYPfCw2s",
-      title: "YouTube video player",
-      caption: "공연 배경 및 무대 영상",
+      src: "https://www.youtube.com/embed/Z6FHmi6E1ck?si=5POXUmWt61b6i2tl",
+      title: "기업 영상 | 푸른파트너스",
+      caption: "기업 영상 | 푸른파트너스",
     },
     {
-      src: "https://www.youtube.com/embed/SrERZSx8Sfk?si=DailA6RjzZ9jtjnH",
-      title: "YouTube video player",
-      caption: "공연 배경 및 무대 영상",
-    },
-    {
-      src: "https://www.youtube.com/embed/S7v2u0DaM0s?si=UkSIDQxfjShnj2MT",
-      title: "YouTube video player",
-      caption: "교육용 콘텐츠 영상",
-    },
-    {
-      src: "https://www.youtube.com/embed/Hg0LjMKes-g?si=DHEO3kncY6zu5ON_",
-      title: "YouTube video player",
-      caption: "교육용 콘텐츠 영상",
-    },
-    {
-      src: "https://www.youtube.com/embed/D2IjZln83cQ?si=oditIDHMYl3em5IJ",
-      title: "YouTube video player",
-      caption: "SNS 콘텐츠",
-    },
-    {
-      src: "https://youtube.com/embed/SgIJWre7e0s?si=0MpeH13K8PzPWXhO",
-      title: "YouTube video player",
-      caption: "SNS 콘텐츠",
-    },
-    {
-      src: "https://youtube.com/embed/ROgu2cVH_Ts?si=UYfTUXvFwpalIcqU",
-      title: "YouTube video player",
-      caption: "SNS 콘텐츠",
+      src: "https://www.youtube.com/embed/TetWejyUpv0?si=sqAf7kAXR2_lUyk3",
+      title: "화성공모전",
+      caption: "화성공모전",
     },
   ];
 
-  const grid = document.querySelector(".portfolio-grid");
-  if (!grid) return;
-  grid.innerHTML = "";
+  // Get unique video categories
+  const videoCategories = ["전체", ...new Set(videos.map((v) => v.category))];
 
-  videos.forEach((v, index) => {
-    const item = document.createElement("div");
-    item.className = "portfolio-item";
+  // Tab switching functionality
+  const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
 
-    const videoWrap = document.createElement("div");
-    videoWrap.className = "portfolio-video";
-
-    const iframe = document.createElement("iframe");
-    // Use data-src + lazy loading via IntersectionObserver to avoid loading all iframes at once
-    iframe.dataset.src = v.src;
-    iframe.title = v.title || "";
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute(
-      "allow",
-      "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    );
-    iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
-    iframe.setAttribute("allowfullscreen", "");
-    iframe.loading = "lazy"; // hint for browsers that support it
-    iframe.style.background = "transparent";
-    iframe.style.border = "0";
-    iframe.style.display = "block";
-    iframe.style.width = "100%";
-    iframe.style.height = "100%";
-
-    // If the item is early (above the fold), load immediately to avoid perceived delay
-    const EARLY_LOAD_COUNT = 3;
-    if (index < EARLY_LOAD_COUNT) {
-      iframe.src = v.src;
-    }
-
-    videoWrap.appendChild(iframe);
-
-    const info = document.createElement("div");
-    info.className = "portfolio-info";
-    const h3 = document.createElement("h3");
-    h3.textContent = v.caption || "";
-    info.appendChild(h3);
-
-    item.appendChild(videoWrap);
-    item.appendChild(info);
-
-    const hue = (index * 60) % 360;
-
-    grid.appendChild(item);
+  tabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tabName = btn.getAttribute("data-tab");
+      
+      // Update active tab button
+      tabBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      
+      // Update active tab content
+      tabContents.forEach((content) => content.classList.remove("active"));
+      document.getElementById(`${tabName}-tab`)?.classList.add("active");
+    });
   });
 
-  // After creating items, lazy-load remaining iframes when they enter viewport
-  const lazyIframes = document.querySelectorAll("iframe[data-src]");
-  if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const ifr = entry.target;
-            if (ifr.dataset && ifr.dataset.src && !ifr.src) {
-              ifr.src = ifr.dataset.src;
-            }
-            obs.unobserve(ifr);
-          }
-        });
-      },
-      { rootMargin: "200px 0px" }
-    );
+  function renderPortfolio(itemsToRender) {
+    const board = document.querySelector(".portfolio-board");
+    if (!board) return;
+    board.innerHTML = "";
 
-    lazyIframes.forEach((f) => {
-      if (!f.src) io.observe(f);
+    itemsToRender.forEach((v, index) => {
+      const card = document.createElement("div");
+      card.className = "portfolio-card";
+      card.setAttribute("data-category", v.category);
+
+      const videoWrap = document.createElement("div");
+      videoWrap.className = "portfolio-card-video";
+
+      const iframe = document.createElement("iframe");
+      iframe.dataset.src = v.src;
+      iframe.title = v.title || "";
+      iframe.setAttribute("frameborder", "0");
+      iframe.setAttribute(
+        "allow",
+        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      );
+      iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+      iframe.setAttribute("allowfullscreen", "");
+      iframe.loading = "lazy";
+      iframe.style.background = "transparent";
+      iframe.style.border = "0";
+      iframe.style.display = "block";
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+
+      const EARLY_LOAD_COUNT = 3;
+      if (index < EARLY_LOAD_COUNT) {
+        iframe.src = v.src;
+      }
+
+      videoWrap.appendChild(iframe);
+
+      const info = document.createElement("div");
+      info.className = "portfolio-card-info";
+      
+      const title = document.createElement("h3");
+      title.className = "portfolio-card-title";
+      title.textContent = v.caption || "";
+      
+      info.appendChild(title);
+
+      card.appendChild(videoWrap);
+      card.appendChild(info);
+
+      board.appendChild(card);
     });
-  } else {
-    // Fallback: load all if IntersectionObserver isn't available
-    lazyIframes.forEach((f) => {
-      if (!f.src && f.dataset && f.dataset.src) f.src = f.dataset.src;
-    });
+
+    // Lazy-load iframes
+    const lazyIframes = document.querySelectorAll("iframe[data-src]");
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const ifr = entry.target;
+              if (ifr.dataset && ifr.dataset.src && !ifr.src) {
+                ifr.src = ifr.dataset.src;
+              }
+              obs.unobserve(ifr);
+            }
+          });
+        },
+        { rootMargin: "200px 0px" }
+      );
+
+      lazyIframes.forEach((f) => {
+        if (!f.src) io.observe(f);
+      });
+    } else {
+      lazyIframes.forEach((f) => {
+        if (!f.src && f.dataset && f.dataset.src) f.src = f.dataset.src;
+      });
+    }
   }
+
+  // Initial render
+  renderPortfolio(videos);
 });

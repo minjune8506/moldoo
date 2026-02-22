@@ -1,75 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moldoo STUDIO</title>
-    <link rel="stylesheet" href="style.css" />
-    <!-- Preconnect to YouTube/Google domains to reduce DNS/TCP/TLS latency for iframe loads -->
-    <link rel="preconnect" href="https://www.youtube.com" />
-    <link rel="preconnect" href="https://s.ytimg.com" />
-    <link rel="preconnect" href="https://www.google.com" />
-  </head>
 
-  <body>
-    <nav id="navbar">
-      <div class="logo">Moldoo Studio</div>
-      <ul class="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Moldoo STUDIO</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <div class="hero-logo">
-          <object data="assets/logo.svg" type="image/svg+xml"></object>
-        </div>
-        <h2 class="hero-text">
-          영상 콘텐츠 제작 전문팀,
-          <span class="hero-strong">몰두 스튜디오</span>
-        </h2>
-      </div>
-    </section>
+<body>
+	<nav id="navbar">
+		<a href="index.html" class="logo">
+			<img src="assets/logo.svg" alt="Moldoo STUDIO Logo" class="logo-image" />
+		</a>
+		<ul class="nav-links">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li class="dropdown">
+				<a href="project.html">PROJECT</a>
+				<ul class="dropdown-menu">
+					<li><a href="project.html#video-tab">FILM</a></li>
+					<li><a href="project.html#design-tab">DESIGN</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html">CONTACT</a></li>
+		</ul>
+	</nav>
 
-    <section id="portfolio">
-      <h2 class="section-title">Our Portfolio</h2>
-      <div class="portfolio-grid"></div>
-    </section>
+	<section id="home" class="hero">
+		<div class="hero-content">
+			<h2 class="hero-text">
+				<span class="hero-title">
+					We do more, <span class="hero-title-bold">Moldoo</span>
+				</span>
+				<span class="hero-subtitle">고객의 니즈 그 이상을 실현하는 올라운더 크리에이티브 그룹</span>
+			</h2>
+		</div>
+	</section>
 
-    <section id="services">
-      <h2 class="section-title">Our Services</h2>
-      <div class="services-grid"></div>
-    </section>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script src="javascript/navbar.js"></script>
+	<script src="javascript/smooth.js"></script>
+</body>
 
-    <section id="contact">
-      <h2 class="section-title">Contact Us</h2>
-      <div class="contact-content">
-        <p>
-          새로운 프로젝트에 대해 이야기 나누고 싶으시다면 언제든지
-          연락주세요.<br />
-          최고의 결과물로 보답하겠습니다.
-        </p>
-        <a href="mailto:moldoo.studio@gmail.com" class="cta-button">문의하기</a>
-        <div class="contact-info">
-          <div class="contact-item">
-            📧
-            <a href="mailto:moldoo.studio@gmail.com">moldoo.studio@gmail.com</a>
-          </div>
-          <div class="contact-item">📍 서울특별시 봉천동 949-18 206호</div>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Moldoo STUDIO. All rights reserved.</p>
-    </footer>
-
-    <script src="javascript/navbar.js"></script>
-    <script src="javascript/smooth.js"></script>
-    <script src="javascript/portfolio.js"></script>
-    <script src="javascript/services.js"></script>
-  </body>
 </html>
